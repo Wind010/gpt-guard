@@ -1,0 +1,37 @@
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    animation: flashing 1s infinite;
+  }
+  
+  @keyframes flashing {
+    0% { background-color: #FFFFFF; }
+    50% { background-color: #FF0000; }
+    100% { background-color: #FFFFFF; }
+  }
+
+
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  

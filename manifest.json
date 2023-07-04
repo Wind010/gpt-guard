@@ -1,0 +1,22 @@
+{
+   "manifest_version": 3,
+   "name": "GPT-Guard",
+   "description": "Monitor for potential AI sites and show prompt warning users of risks.",
+   "version": "1.0.0",
+   "permissions": [
+      "scripting",
+      "activeTab"
+   ],
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "host_permissions": [ "<all_urls>" ],
+   "icons": {
+      "16": "gpt_guard_16.png",
+      "48": "gpt_guard_48.png",
+      "128": "gpt_guard_128.png"
+   }
+}
