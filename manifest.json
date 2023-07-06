@@ -2,7 +2,7 @@
    "manifest_version": 3,
    "name": "GPT-Guard",
    "description": "Monitor for potential AI sites and show prompt warning users of risks.",
-   "version": "1.0.0",
+   "version": "0.0.0.1",
    "permissions": [
       "scripting",
       "activeTab",

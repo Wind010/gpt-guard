@@ -1,7 +1,7 @@
 
 /**
  * Checks if valid IP Address.
- * @param  {ipAddress} The ipAddress to check.
+ * @param  {String} The ipAddress to check.
  * @return {Bool} Is valid ip address.
  */
 function validateIpAddress(ipAddress) {
