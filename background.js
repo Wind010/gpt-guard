@@ -21,7 +21,7 @@ function validateIpAddress(ipAddress) {
 function gptGuard(changeInfo, tabId, domain) {
     console.debug("domain: " + domain);
 
-    if (changeInfo.status === 'complete') {
+    if (changeInfo.status === 'loading') {
         const siteSet = new Set(["openai", "bing", "midjourney", "playgroundai", "aidungeon"]); // Add others as needed
         if (! siteSet.has(domain)) {
             return;
@@ -127,7 +127,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     }
 
     // Get the domain and top-level domain names assuming it's not an IP.
-    let domain = (hostname.length === 2) ? hostnameArr[0] : hostnameArr[1];
+    let domain = (hostnameArr.length === 2) ? hostnameArr[0] : hostnameArr[1];
     gptGuard(changeInfo, tabId, domain);
 });
 
